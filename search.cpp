@@ -67,3 +67,15 @@ int main()
 
     return 0;
 }
+
+int linearSearch(auto Data, auto Key)
+{
+	for(unsigned int i = 0; i < Data.size(); i++)
+	{
+		if (Data[i] == Key) //Found term
+		{
+			return i; //Return the term's location
+		}
+	} //End For Loop
+	return -1; //The term is not found
+}
